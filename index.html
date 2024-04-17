@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Divs with Image</title>
+<!-- Include Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .styled-div {
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .styled-div img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+
+    .img1 {
+        box-shadow: 10px 5px 10px rgba(3, 23, 253, 0.9);
+    }
+
+    .img2 {
+        filter: drop-shadow(20px 10px 10px rgba(3, 23, 253, 0.9));
+    }
+
+    h2 {
+        color: purple; /* Use the existing color scheme */
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Heading to emphasize the differences -->
+<h2>Differences between box-shadow and filter</h2>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="styled-div">
+                <!-- PNG image -->
+                <img class="img1" src="https://th.bing.com/th/id/OIP.fU54QyJYhFy5do9KWEAszgHaJg?rs=1&pid=ImgDetMain" alt="cat 1">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="styled-div">
+                <img class="img2" src="https://purepng.com/public/uploads/medium/purepng.com-catanimalscat-981524673565oieou.png" alt="cat 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Include Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
